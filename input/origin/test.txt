@@ -1,0 +1,85 @@
+1. a+2* (num - 4)/2
+语法正确
+
+
+2. (a+15)*b
+语法正确
+
+
+3. num1+(-1) + 1num1 +55
+语法错误
+Invalid character: 1num1
+Need factor after :num1+(-1)+
+
+4. + 2 *
+语法错误
+Need factor after :+2*
+result: +2*
+
+5. (2+3 * 4
+语法错误
+Need rparen after :(2+3*4
+result: (2+3*4
+
+6. 2+()*3 @ 4
+语法错误
+Invalid character: @
+Need factor after :2+(
+Redundant Character after :2+()*3
+
+7. 2 + + **+ 3
+语法错误
+Need factor after :2+
+Need factor after :2++
+Need factor after :2++*
+Need factor after :2++**
+result: 2++**+3
+
+8. 2+3 * 4)+4&num1
+语法错误
+Invalid character: &
+Need lparen before :2+3*4)
+Redundant Character after :2+3*4)+4
+result: 2+3*4)+4
+
+9. 2+50*sums)+(4+5*6*4mm+(&num1
+语法错误
+Invalid character: 4mm
+Invalid character: &
+Need lparen before :2+50*sums)
+Need factor after :2+50*sums)+(4+5*6*
+Need rparen after :2+50*sums)+(4+5*6*+(num1
+Need rparen after :2+50*sums)+(4+5*6*+(num1
+result: 2+50*sums)+(4+5*6*+(num1
+
+10. 2+3 * 4)+4&num1
+语法错误
+Invalid character: &
+Need lparen before :2+3*4)
+Redundant Character after :2+3*4)+4
+result: 2+3*4)+4
+
+11. 2+3 * 4)+4&Num1++5*Super 1000
+语法错误
+Invalid character: &
+Need lparen before :2+3*4)
+Need operator after :2+3*4)+4
+Need factor after :2+3*4)+4num1+
+Need operator after :2+3*4)+4num1++5*super
+result: 2+3*4)+4num1++5*super1000
+
+12. if num1 <=4 then num2 = 3
+语法正确
+result: if num1 <= 4 then num2 = 3 then num2 = 4
+no error occurred
+
+13. if num1 then num2 = 3
+语法错误
+Need op after :if num1
+result: if num1 then num2 = 3 then num2 = 4
+
+14. num1*5)+9)
+语法错误
+Need lparen before :num1 * 5 )
+Need lparen before :num1 * 5 ) + 9 )
+result: num1 * 5 ) + 9 )

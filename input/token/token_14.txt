@@ -1,0 +1,7 @@
+( ident , num1 )
+( times , * )
+( number , 5 )
+( rparen , ) )
+( plus , + )
+( number , 9 )
+( rparen , ) )

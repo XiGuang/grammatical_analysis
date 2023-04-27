@@ -1,0 +1,7 @@
+( number , 2 )
+( plus , + )
+( plus , + )
+( times , * )
+( times , * )
+( plus , + )
+( number , 3 )
