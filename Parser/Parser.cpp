@@ -133,6 +133,7 @@ bool Parser::statement(std::string &result) {
         valid &= compoundStatement(result);
     } else if (currentToken.type == "readsym") {
         valid &= readStatement(result);
+    } else if (currentToken.type == "writesym") {
         valid &= writeStatement(result);
     } else if (currentToken.type == "ident") {
         valid &= assignmentStatement(result);
